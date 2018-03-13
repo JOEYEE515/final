@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="contact.css">
+	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+</head>
+<body>
+<header>CONTACT US</header>
+<button class="tablink" onclick="openPage('Telephone', this, '#91abd6')">Telephone</button>
+<button class="tablink" onclick="openPage('Facebook', this, ' #c2d2ed')" id="defaultOpen">Facebook</button>
+<button class="tablink" onclick="openPage('Instagram', this, '#9ea0a3')">Instagram</button>
+<button class="tablink" onclick="openPage('Email', this, '#e8e8e8')">Email</button>
+
+<div id="Telephone" class="tabcontent">
+  <p>JOEY  011-1234-4567</p>
+  <p>JOHN 012-4568527</p>
+
+</div>
+
+<div id="Facebook" class="tabcontent">
+  <p>Joey's shop</p> 
+</div>
+
+<div id="Instagram" class="tabcontent">
+  <p>joey_shop</p>
+</div>
+
+<div id="Email" class="tabcontent">
+  <p>joeyshop@gmail.com</p>
+</div>
+
+<script>
+function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html>
