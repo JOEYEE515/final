@@ -187,18 +187,3 @@ p
 {
 	font-size: 5vw;
 }
-.fa {
-    padding: 3px;
-    font-size: 2vw;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-}
-.fa:hover {
-    opacity: 0.7;
-}
-.fa fa-home
-{
-	color: white;
-	font-size: 48px;
-}
