@@ -1,41 +1,124 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Joey's shop</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<title>Joey's Shop</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="index.css">
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-	<link rel="stylesheet" type="text/css" href="final.css">
+<body>
 </head>
 <body>
 <header>
-Joey's shop
+	Joey's Shop &hearts;
 </header>
-<div class="topnav">
-	<a href="final.html">Home</a>
-	<a href="product.html">Product</a>
-	<a href="cart.html">Cart</a>
-	<a href="contact.html">Contact</a>
-	<a href="login.html">Login</a>
-
+<div class="topnav" id="myTopnav">
+	<a href="index.html"><div class="fa fa-home"></div></a>
+	<a href="index.html">PRODUCT</a>
+	<a href="cart.html">CART</a>
+	<a href="contact.html">CONTACT</a>
+	<a href="login.html">LOGIN</a>
+	<a href="javascript:void(0);" style="font-size:15px;"" class="icon" onclick="myFunction()">&#9776;</a>
 </div>
-<div class="intro">
-	Welcome to my shop!<br>
-	<input type="text" name="search" placeholder="Search">
-	<button>Search</button>
-</div>
-
+<br>
 <div class="container">
-	<img src="erring1.jpg">
-	<img src="erring2.jpg">
-	<img src="erring3.jpg">
-	<img src="erring4.jpg">
-	<img src="erring5.jpg">
-	<img src="erring6.jpg">
+	<h1>Welcome To My Page!!!</h1>
+	<input type="text" name="search" placeholder="Search"> &nbsp; <span><i class="material-icons">search</i></span>
 </div>
-<div class="footer">
-	HOPE YOU ENJOY
+<br>
+<br>
+<div class="img-container">
+	
+	<div class="left">
+		<a href="earring.html">
+	<div class="card">
+		<img src="erring1.jpg" alt="Ear Ring" style="width: 100%"> 
+		<div class="container">
+			<h1>Ear Ring &hearts;</h1>
+			
+			<h2>Click To Shop!!!</h2>
+		</div>
+		
+	</div>
+	</a>
 </div>
+<div class="right">
+	<a href="hairband.html">
+	<div class="card">
+		<img src="hb1.jpg" alt="HairAccessories" style="width: 100%">
+		<div class="container">
+			<h1>Hair Band &hearts;</h1>
+			<h2>Click To Shop!!!</h2>
+		</div>
+	</div>
+	</a>
+</div>
+<div class="left">
+	<a href="necklace.html">
+	<div class="card">
+		<img src="necklace1.jpg" alt="Necklace" style="width: 100%">
+		<div class="container">
+			<h1>Necklace &hearts;</h1>
+			<h2>Click To Shop!!!</h2>
+		</div>
+	</div>
+	</a>
+</div>
+<div class="right">
+	<a href="ring.html">
+	<div class="card">
+		<img src="ring1.jpg" alt="Ring" style="width: 100%">
+		<div class="container">
+			<h1>Ring &hearts;</h1>
+			<h2>Click To Shop!!! </h2>
+		</div>
+	</div>
+	</a>
+</div>
+	<div class="left">
+		<a href="brooch.html">
+		<div class="card">
+			<img src="brooch.jpg" alt="Brooch" style="width: 100%">
+			<div class="container">
+				<h1>Brooch &hearts;</h1>
+				<h2>Click To Shop!!!</h2>
+			</div>
+
+		</div>
+		</a>
+	</div>
+<div class="right">
+	<a href="bracelet.html"> 
+	<div class="card">
+		<img src="bracelet.jpg" alt="Bracelet" style="width: 100%">
+		<div class="container">
+			<h1>Bracelet &hearts;</h1>
+			<h2>Click To Shop!!!</h2>
+		</div>
+	</div>
+	</a>
+</div>
+
+
+</div>
+
+<script>
+function myFunction()
+{
+	var x = document.getElementById("myTopnav");
+	if(x.className === "topnav")
+	{
+		x.className += " responsive";
+	}
+	else
+	{
+		x.className = "topnav";
+	}
+}
+</script>
+<footer>
+	HOPE YOU LIKE IT!
+   <p>Copyright &copy;2018 Joey's shop</p>
+</footer>
 </body>
 </html>

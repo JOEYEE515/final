@@ -7,27 +7,60 @@
 </head>
 <body>
 <header>Cart</header>
+	<div class="topnav" id="myTopnav">
+	<a href="index.html">HOME</a>
+	<a href="index.html">PRODUCT</a>
+	<a href="cart.html">CART</a>
+	<a href="contact.html">CONTACT</a>
+	<a href="login.html">LOGIN</a>
+	<a href="javascript:void(0);" style="font-size:15px;"" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
 <br>
 <h1>Please select the product that you want to buy.</h1>
-<form>
+<form method="POST" action="index.html">
 	<fieldset>
-		<legend>KRO DLO DESIGN</legend>
-		<input type="checkbox" name="krodlo" value="bluenavy"><img src="krodlo1.jpg">
-
-	</fieldset>
-	<fieldset>
-		<legend>HIP HOP STYLE</legend>
-		<input type="checkbox" name="hiphop" value="blueclover"><img src="hiphop3.jpg">
-	</fieldset>
-	<fieldset>
-		<legend>COOL STYLE</legend>
-		<input type="checkbox" name="cool" value="minibeer"><img src="cool3.jpg">
-	</fieldset>
-	<br>
-	<button>BUY</button><button>CANCEL</button>
+		<legend>Ear Ring</legend>
+		<input type="checkbox" name="krodlo" value="bluenavy"><img src="krodlo1.jpg" class="image">  Navy Blue
+		RM 9.90
+		<br>
+		<br>
+		<input type="checkbox" name="hiphop" value="blueclover"><img src="hiphop3.jpg" class="image">  Blue Clover RM 4.90
+		<br>
+		<br>
+		<input type="checkbox" name="cool" value="minibeer"><img src="cool3.jpg" class="image">  Mini Beer RM 5.90
+    </fieldset>
+    <fieldset>
+    	<legend>  Necklace</legend>
+    	<input type="checkbox" name="butterflychoker" value="butterflychoker"><img src="necklace5.jpg" class="image">  Butterfly Choker RM 10.90
+    	<br>
+    	<br>
+    	<input type="checkbox" name="blackchoker" value="blackchoker"><img src="necklace1.jpg" class="image">  Black Choker RM 8.00
+    </fieldset>
+    <br>
+    <div class="container">
+	<input type="submit" name="buy" value="BUY">
+	<input type="reset" name="reset" value="CANCEL">
+</div>
 </form>
 <script>
 	alert("Please login first!!!")
+function myFunction()
+{
+	var x = document.getElementById("myTopnav");
+	if(x.className === "topnav")
+	{
+		x.className += " responsive";
+	}
+	else
+	{
+		x.className = "topnav";
+	}
+}
 </script>
+
+<footer>
+	HOPE YOU LIKE IT!
+   <p>Copyright &copy;2018 Joey's shop</p>
+</footer>
 </body>
 </html>

@@ -48,15 +48,15 @@ header
 	text-decoration-line: none;
 }
 
-.container
+.img-container
 {
-	margin-left: 150px;
-	padding-top: 50px;
+	margin-left: 150%;
+	padding-top: 50%;
 }
-.container img
+.img-container img
 {
-	width: 500px;
-	height: 500px;
+	width: 500%;
+	height: 500%;
 }
 .footer
 {
@@ -99,4 +99,10 @@ button:hover
 {
   background-color: #1760d6;
   color: white;
+}
+.container
+{
+  max-width: 600px;
+  position: relative;
+  margin: auto;
 }

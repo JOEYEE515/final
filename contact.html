@@ -5,18 +5,25 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="contact.css">
 	<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 <header>CONTACT US</header>
-<button class="tablink" onclick="openPage('Telephone', this, '#91abd6')">Telephone</button>
-<button class="tablink" onclick="openPage('Facebook', this, ' #c2d2ed')" id="defaultOpen">Facebook</button>
-<button class="tablink" onclick="openPage('Instagram', this, '#9ea0a3')">Instagram</button>
-<button class="tablink" onclick="openPage('Email', this, '#e8e8e8')">Email</button>
+  <div class="topnav" id="myTopnav">
+  <a href="index.html">HOME</a>
+  <a href="index.html">PRODUCT</a>
+  <a href="cart.html">CART</a>
+  <a href="contact.html">CONTACT</a>
+  <a href="login.html">LOGIN</a>
+  <a href="javascript:void(0);" style="font-size:15px;"" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+<button class="tablink" onclick="openPage('Telephone', this, '#91abd6')"><div class="fa fa-phone-square"></div></button>
+<button class="tablink" onclick="openPage('Facebook', this, ' #c2d2ed')" id="defaultOpen"><div class="fa fa-facebook"></div></button>
+<button class="tablink" onclick="openPage('Instagram', this, '#9ea0a3')"><div class="fa fa-instagram"></div></button>
+<button class="tablink" onclick="openPage('Email', this, '#e8e8e8')"><div class=" fa fa-envelope-o"></div></button>
 
 <div id="Telephone" class="tabcontent">
   <p>JOEY  011-1234-4567</p>
-  <p>JOHN 012-4568527</p>
-
 </div>
 
 <div id="Facebook" class="tabcontent">
@@ -48,7 +55,24 @@ function openPage(pageName,elmnt,color) {
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
-</script>
-     
+
+function myFunction()
+{
+  var x = document.getElementById("myTopnav");
+  if(x.className === "topnav")
+  {
+    x.className += " responsive";
+  }
+  else
+  {
+    x.className = "topnav";
+  }
+}
+</script> 
+
+<footer>
+  HOPE YOU LIKE IT!
+   <p>Copyright &copy;2018 Joey's shop</p>
+</footer>   
 </body>
 </html>
